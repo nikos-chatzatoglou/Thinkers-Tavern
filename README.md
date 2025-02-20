@@ -1,15 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Thinker's Tavern 🍷🧠 Overview
+## Thinker's Tavern 🍷 Overview
 
 Welcome to the Philosophers App! This application is your gateway to exploring the thoughts and works of some of the greatest minds in history. Whether you're a philosophy student, a curious thinker, or just someone who loves to ponder life's big questions, this app is designed to inspire and enlighten.
 
 ### Features
 
-- **Explore Philosophers**: Dive into the lives and ideas of famous philosophers from different eras and schools of thought.
-- **Daily Quotes**: Get inspired with daily quotes from renowned philosophers.
-- **Interactive Timeline**: Visualize the historical context of philosophical movements and figures.
-- **Personalized Recommendations**: Discover new philosophers and works based on your interests.
+- **Explore Philosophers 🏺🤖**: Dive into the lives and ideas of famous philosophers from different eras and schools of thought.
+- **Daily Quotes 🤔💭**: Get inspired with daily quotes from renowned philosophers.
+- **Interactive Timeline ⏳📜**: Visualize the historical context of philosophical movements and figures.
+- **Personalized Recommendations✨**: Discover new philosophers and works based on your interests.
 
 ## Getting Started
 
