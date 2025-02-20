@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Philosophers App Overview
+## Thinker's Tavern 🍷🧠 Overview
 
 Welcome to the Philosophers App! This application is your gateway to exploring the thoughts and works of some of the greatest minds in history. Whether you're a philosophy student, a curious thinker, or just someone who loves to ponder life's big questions, this app is designed to inspire and enlighten.
 
