@@ -29,7 +29,7 @@ export default function PhilosopherCard({ philosopher }: PhilosopherCardProps) {
               whileHover={{ scale: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <Avatar className='w-full h-full rounded-none'>
+              <Avatar className='w-full h-[300px]  rounded-none'>
                 <AvatarImage
                   src={philosopher.image}
                   alt={philosopher.name}
@@ -44,8 +44,10 @@ export default function PhilosopherCard({ philosopher }: PhilosopherCardProps) {
             </CardTitle>
           </CardHeader>
           <CardContent className='p-4'>
-            <p className='text-sm text-gray-300 mb-2'>{philosopher.period}</p>
-            <p className='text-gray-100'>{philosopher.description}</p>
+            <p className='text-lg font-semibold text-gray-300 mb-2'>
+              {philosopher.period}
+            </p>
+            <p className='text-gray-100 text-xl'>{philosopher.description}</p>
           </CardContent>
         </Card>
       </motion.div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import PhilosopherCard from "../components/PhilosopherCard";
+import PhilosopherCard from "./components/PhilosopherCard";
 const philosophers = [
   {
     id: "socrates",
@@ -38,7 +38,7 @@ export default function PhilosophersPage() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white overflow-hidden'>
+    <div className='min-h-screen bg-gradient-to-br from-teal-900 via-black to-teal-800 text-white overflow-hidden'>
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
         {mounted && (
           <>
@@ -91,9 +91,8 @@ export default function PhilosophersPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          Choose a philosopher to guide you through the realms of truth and
-          enlightenment. Uncover the mysteries of existence and find the meaning
-          of life.
+          Choose a philosopher to guide you through the realms of thought,
+          unraveling the mysteries of existence.
         </motion.p>
         <motion.div
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'

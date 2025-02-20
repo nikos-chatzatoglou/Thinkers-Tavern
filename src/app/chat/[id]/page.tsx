@@ -116,18 +116,18 @@ export default function Chat() {
   };
 
   return (
-    <div className='flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-4'>
-      <Card className='w-full max-w-2xl shadow-xl'>
+    <div className='flex items-center justify-center min-h-screen bg-gradient-to-br from-teal-900 via-black to-teal-800 p-4'>
+      <Card className='w-full max-w-2xl shadow-xl bg-gray-700'>
         <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
           <Button
-            variant='ghost'
+            variant='secondary'
             size='icon'
-            onClick={() => router.push("/philosophers")}
-            className='text-gray-600 hover:text-gray-900'
+            onClick={() => router.push("/")}
+            className='bg-teal-800 hover:bg-teal-900 text-white'
           >
             <ArrowLeft className='h-4 w-4' />
           </Button>
-          <CardTitle className='text-2xl font-bold'>
+          <CardTitle className='text-2xl font-bold text-white'>
             Dialogue with {philosopher.name}
           </CardTitle>
           <Avatar>
@@ -135,8 +135,8 @@ export default function Chat() {
             <AvatarFallback>{philosopher.name[0]}</AvatarFallback>
           </Avatar>
         </CardHeader>
-        <CardContent>
-          <ScrollArea className='h-[60vh] pr-4' ref={scrollAreaRef}>
+        <CardContent className='bg-gray-700'>
+          <ScrollArea className='h-[70vh] pr-4' ref={scrollAreaRef}>
             <AnimatePresence initial={false}>
               {messages.map((m, index) => (
                 <motion.div
@@ -163,8 +163,8 @@ export default function Chat() {
                   <div
                     className={`p-3 rounded-lg ${
                       m.role === "user"
-                        ? "bg-blue-500 text-white user-input"
-                        : "bg-gray-200 text-gray-800 chat-message"
+                        ? "bg-blue-600 text-white user-input"
+                        : "bg-gray-600 text-gray-200 chat-message"
                     } max-w-[80%]`}
                   >
                     {m.content}
@@ -183,7 +183,7 @@ export default function Chat() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className='flex items-center space-x-2 text-gray-500'
+                className='flex items-center space-x-2 text-gray-400'
               >
                 <Sparkles className='h-4 w-4 animate-pulse' />
                 <span className='handwritten'>
@@ -203,12 +203,12 @@ export default function Chat() {
               onChange={(e) => setInput(e.target.value)}
               placeholder={`Ask ${philosopher.name} a question...`}
               disabled={isLoading || !puterLoaded}
-              className='flex-grow user-input'
+              className='flex-grow user-input bg-gray-600 text-white'
             />
             <Button
               type='submit'
               disabled={isLoading || !puterLoaded}
-              className='bg-indigo-500 hover:bg-indigo-600 text-white'
+              className='bg-teal-800 hover:bg-teal-900 text-white'
             >
               <Send className='h-4 w-4' />
             </Button>
