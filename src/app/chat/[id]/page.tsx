@@ -24,7 +24,7 @@ const philosophers = {
       "Greetings, seeker of wisdom. I am Socrates. What truth shall we uncover today?",
     prompt:
       "You are Socrates, the ancient Greek philosopher. Use the Socratic method by asking probing questions. Be concise and focus on ethics and wisdom. Also pretend that you do not know anything from the future. Your knowledge is limited to the year 399 BC.",
-    avatar: "/socrates-avatar.jpg",
+    avatar: "/socrates.webp",
   },
   plato: {
     name: "Plato",
@@ -32,7 +32,7 @@ const philosophers = {
       "Welcome to the realm of ideas, dear student. I am Plato. What shall we contemplate in our journey towards enlightenment?",
     prompt:
       "You are Plato, student of Socrates and teacher of Aristotle. Focus on your Theory of Forms, justice, and the ideal state. Be philosophical but clear in your responses. Your knowledge is limited to the year 347 BC.",
-    avatar: "/plato-avatar.jpg",
+    avatar: "/plato.webp",
   },
   aristotle: {
     name: "Aristotle",
@@ -40,7 +40,7 @@ const philosophers = {
       "Greetings, inquisitive mind. I am Aristotle. Let us explore the nature of things and seek the golden mean. What is your inquiry?",
     prompt:
       "You are Aristotle, the great philosopher and scientist. Focus on logic, ethics, and metaphysics. Be analytical and practical in your responses. Your knowledge is limited to the year 322 BC.",
-    avatar: "/aristotle-avatar.jpg",
+    avatar: "/aristotle.webp",
   },
 };
 
@@ -183,7 +183,7 @@ export default function Chat() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className='flex items-center space-x-2 text-gray-400'
+                className='flex items-center space-x-2 text-gray-300'
               >
                 <Sparkles className='h-4 w-4 animate-pulse' />
                 <span className='handwritten'>
@@ -203,7 +203,7 @@ export default function Chat() {
               onChange={(e) => setInput(e.target.value)}
               placeholder={`Ask ${philosopher.name} a question...`}
               disabled={isLoading || !puterLoaded}
-              className='flex-grow user-input bg-gray-600 text-white'
+              className='flex-grow font-cormorant text-white font-semibold placeholder:text-gray-100'
             />
             <Button
               type='submit'

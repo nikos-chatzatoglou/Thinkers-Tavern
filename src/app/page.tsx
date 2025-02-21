@@ -83,7 +83,7 @@ export default function PhilosophersPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          "The unexamined life is not worth living." - Socrates
+          &quot;The unexamined life is not worth living.&quot; - Socrates
         </motion.p>
         <motion.p
           className='text-lg md:text-xl lg:text-2xl text-center mb-12 max-w-3xl mx-auto'
